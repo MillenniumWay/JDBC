@@ -13,8 +13,8 @@ public class JDBCRunner {
         String URL = "jdbc:postgresql://localhost:5433/postgres";
         ConnectionManager connectionManager = new ConnectionManager(URL, username, pass);
         var connection =   DriverManager.getConnection(URL, username, pass);
-        //language=PostgreSQL
 
+        //language=PostgreSQL
         String SQL = """
                CREATE TABLE info (
                 id serial primary key,
@@ -48,6 +48,8 @@ public class JDBCRunner {
                 System.out.println("--------------------");
             }
      }
+
+
 
 
     }
